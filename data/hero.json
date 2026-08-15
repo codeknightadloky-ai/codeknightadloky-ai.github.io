@@ -39,10 +39,10 @@
       "icon": "email"
     }
   ],
-  "resumeUrl": "",
+  "resumeUrl": "assets/Lokesh_Addanki_Resume.pdf",
   "stats": {
-    "experience": "4+ years",
-    "projects": 0,
+    "experience": "5+ years",
+    "projects": 10,
     "commits": "500+"
   }
 }
