@@ -1,0 +1,149 @@
+{
+  "heading": "$ find ~/projects -type d -maxdepth 1",
+  "projects": [
+    {
+      "name": "spring-boot-microservices",
+      "description": "Personal development project using industry best practices",
+      "technologies": [
+        "Java"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "Java",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/spring-boot-microservices",
+      "isNew": false
+    },
+    {
+      "name": "java_chat_system",
+      "description": "Interactive application built for continuous learning",
+      "technologies": [
+        "Java"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "Java",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/java_chat_system",
+      "isNew": false
+    },
+    {
+      "name": "spring-boot-microservices-banking-application",
+      "description": "Learning project built with modern web technologies",
+      "technologies": [
+        "Java",
+        "Dockerfile"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "Java",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/spring-boot-microservices-banking-application",
+      "isNew": false
+    },
+    {
+      "name": "agentgate",
+      "description": "Hands-on learning experience with modern frameworks",
+      "technologies": [
+        "Python",
+        "Dockerfile"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/agentgate",
+      "isNew": false
+    },
+    {
+      "name": "streamledger",
+      "description": "Modern web application demonstrating clean code principles",
+      "technologies": [
+        "Go",
+        "Dockerfile"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "Go",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/streamledger",
+      "isNew": false
+    },
+    {
+      "name": "ecommerce-microservice-backend-app",
+      "description": "Practice repository for exploring advanced features",
+      "technologies": [
+        "Java",
+        "SQL",
+        "YAML",
+        "Dockerfile"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "Java",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/ecommerce-microservice-backend-app",
+      "isNew": false
+    },
+    {
+      "name": "youtube-trending-etl-aws",
+      "description": "Interactive application built for continuous learning",
+      "technologies": [
+        "HTML",
+        "Python",
+        "HCL"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/youtube-trending-etl-aws",
+      "isNew": false
+    },
+    {
+      "name": "mern-chat-app",
+      "description": "Learning project built with modern web technologies",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "Dockerfile",
+        "HTML"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/mern-chat-app",
+      "isNew": false
+    },
+    {
+      "name": "deploying-aws-webapp-terraform-github-actions",
+      "description": "Personal project for exploring modern development practices",
+      "technologies": [
+        "HCL",
+        "HTML",
+        "Python"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "HCL",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/deploying-aws-webapp-terraform-github-actions",
+      "isNew": false
+    },
+    {
+      "name": "leakcheck",
+      "description": "Practice repository for exploring advanced features",
+      "technologies": [
+        "Python"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/codeknightadloky-ai/leakcheck",
+      "isNew": false
+    }
+  ]
+}

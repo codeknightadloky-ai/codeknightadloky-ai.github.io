@@ -1,0 +1,18 @@
+{
+  "heading": "$ cat /var/log/education.log",
+  "entries": [
+    {
+      "institution": "Lamar University",
+      "degree": "Master's",
+      "field": "Computer Science",
+      "startDate": "Aug 2023—May 2025",
+      "endDate": "",
+      "gpa": "",
+      "honors": []
+    }
+  ],
+  "certifications": [
+    "AWS Certified Developer – Associate",
+    "Oracle Certifications: Java Focused"
+  ]
+}

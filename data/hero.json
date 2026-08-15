@@ -1,0 +1,48 @@
+{
+  "asciiName": [
+    "==================",
+    "  LOKESH ADDANKI  ",
+    "=================="
+  ],
+  "name": "LOKESH ADDANKI",
+  "tagline": "Available for work",
+  "roles": [
+    "Full Stack Developer",
+    "Java Full Stack Developer",
+    "Software Developer"
+  ],
+  "bootSequence": [
+    "[OK] Loading kernel modules...",
+    "[OK] Initializing network interfaces...",
+    "[OK] Mounting filesystems...",
+    "[OK] Starting SSH daemon...",
+    "[OK] Loading portfolio data...",
+    "[OK] System ready."
+  ],
+  "techTags": [
+    "Java",
+    "Java 8+",
+    "J2EE",
+    "Python",
+    "Django",
+    "Flask"
+  ],
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/codeknightadloky-ai",
+      "icon": "github"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:codeknight.adloky@gmail.com",
+      "icon": "email"
+    }
+  ],
+  "resumeUrl": "",
+  "stats": {
+    "experience": "4+ years",
+    "projects": 0,
+    "commits": "500+"
+  }
+}
