@@ -4,6 +4,7 @@
     {
       "pid": "1337",
       "company": "Citigroup",
+      "logo": "assets/img/logos/citigroup.svg",
       "title": "Full Stack Developer",
       "location": "",
       "startDate": "May 2024—Present",
@@ -77,6 +78,7 @@
     {
       "pid": "1237",
       "company": "Arthur J. Gallagher & Co",
+      "logo": "assets/img/logos/ajg.svg",
       "title": "Full Stack Developer",
       "location": "",
       "startDate": "Nov 2023—Apr 2024",
@@ -136,6 +138,7 @@
     {
       "pid": "1137",
       "company": "Toyota Kirloskar Motor",
+      "logo": "assets/img/logos/toyota.svg",
       "title": "Java Full Stack Developer",
       "location": "",
       "startDate": "Dec 2021—Jun 2023",
@@ -192,6 +195,7 @@
     {
       "pid": "1037",
       "company": "Merck Group",
+      "logo": "assets/img/logos/merck.svg",
       "title": "Software Developer",
       "location": "",
       "startDate": "Dec 2020—Nov 2021",

@@ -807,6 +807,53 @@ main {
   background: none;
 }
 
+/* --- Company logo plate (brutalist tile) ---
+   Fixed plate so all four employers read as one consistent row of
+   marks; the logos themselves range from 1:1 (Toyota) to ~5.9:1
+   (Gallagher), so the image is height-locked and contain-fitted. */
+.exp-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 148px;
+  height: 46px;
+  padding: 0.35rem 0.6rem;
+  margin-bottom: 0.65rem;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+  transition: var(--transition);
+}
+
+.exp-logo img {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  /* Monochrome by default to sit inside the brutalist palette;
+     the real brand colour is revealed on card hover. */
+  filter: grayscale(1) contrast(1.15);
+  transition: var(--transition);
+}
+
+.experience-card:hover .exp-logo {
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  transform: translate(-1px, -1px);
+}
+
+.experience-card:hover .exp-logo img {
+  filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exp-logo,
+  .exp-logo img {
+    transition: none;
+  }
+}
+
 .exp-body {
   padding: 0;
 }
@@ -910,6 +957,16 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .exp-logo {
+    width: 116px;
+    height: 38px;
+    margin-bottom: 0;
+    padding: 0.3rem 0.5rem;
+  }
+  .exp-logo img {
+    height: 20px;
   }
 }
 
@@ -925,35 +982,22 @@ main {
   gap: 1.25rem;
 }
 
+/* The offset shadow must be a real box-shadow, not a z-index:-1 ::before.
+   The hover transform creates a stacking context, which re-parents a
+   negative-z-index pseudo-element in front of the card's own background —
+   that painted the whole card black and swallowed its black text. */
 .skill-category-card {
   border: 2px solid var(--border);
   background: var(--surface);
   padding: 1.5rem;
   transition: var(--transition);
   position: relative;
-}
-
-.skill-category-card::before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: -4px;
-  bottom: -4px;
-  background: var(--border);
-  z-index: -1;
-  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
 .skill-category-card:hover {
   transform: translate(-2px, -2px);
-}
-
-.skill-category-card:hover::before {
-  top: 4px;
-  left: 4px;
-  right: -6px;
-  bottom: -6px;
+  box-shadow: var(--shadow-md);
 }
 
 .skill-category-name {
@@ -1123,6 +1167,36 @@ main {
   letter-spacing: 0.1em;
   transform: rotate(12deg);
   z-index: 2;
+}
+
+/* --- Generated schematic thumbnail (full-bleed to card edges) --- */
+.project-thumb {
+  /* cancel the card's 1.5rem padding so the plate meets the border */
+  margin: -1.5rem -1.5rem 1.25rem;
+  border-bottom: 2px solid var(--border);
+  background: var(--bg);
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.project-card:hover .project-thumb img {
+  transform: scale(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-thumb img,
+  .project-card:hover .project-thumb img {
+    transition: none;
+    transform: none;
+  }
 }
 
 .project-name {

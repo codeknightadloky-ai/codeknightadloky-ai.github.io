@@ -375,9 +375,19 @@
         }).join('') +
         '</div>';
 
+      var logoHTML = '';
+      if (pos.logo) {
+        logoHTML = '<span class="exp-logo">' +
+          '<img src="' + esc(pos.logo) + '" alt="' + esc(pos.company) + ' logo" ' +
+            'loading="lazy" decoding="async" ' +
+            'onerror="this.parentNode.style.display=\'none\'">' +
+        '</span>';
+      }
+
       return '<div class="experience-card">' +
         '<div class="exp-header">' +
           '<div class="exp-header-left">' +
+            logoHTML +
             '<span class="exp-company">' + esc(pos.company) + '</span>' +
             (statusLabel ? '<span class="exp-status running">' + statusLabel + '</span>' : '') +
           '</div>' +
@@ -466,8 +476,18 @@
       if (proj.liveUrl) linksHTML += '<a href="' + esc(proj.liveUrl) + '" target="_blank" rel="noopener noreferrer" class="project-link">' + icon('external') + ' Live Demo</a>';
       linksHTML += '</div>';
 
+      var thumbHTML = '';
+      if (proj.image) {
+        thumbHTML = '<div class="project-thumb">' +
+          '<img src="' + esc(proj.image) + '" alt="Schematic illustration for ' + esc(proj.name) + '" ' +
+            'loading="lazy" decoding="async" width="1536" height="1024" ' +
+            'onerror="this.parentNode.style.display=\'none\'">' +
+        '</div>';
+      }
+
       return '<div class="project-card">' +
         newBadge +
+        thumbHTML +
         '<div class="project-name"><span class="lang-dot ' + langClass + '"></span>' + esc(proj.name) + '</div>' +
         '<div class="project-description">' + esc(proj.description) + '</div>' +
         metaHTML + techHTML + linksHTML +
@@ -750,6 +770,10 @@
     var sections = document.querySelectorAll('.section');
     if (!sections.length) return;
 
+    // threshold must stay 0: a ratio-based threshold is unreachable for
+    // sections taller than 1/threshold viewports (#experience runs ~4000px),
+    // which would leave them stuck at opacity 0 forever. rootMargin does the
+    // "wait until it's properly on screen" job instead, height-independently.
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -757,7 +781,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0, rootMargin: '0px 0px -12% 0px' });
 
     sections.forEach(function (s) { observer.observe(s); });
   }
