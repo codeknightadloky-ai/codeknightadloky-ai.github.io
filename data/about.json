@@ -1,5 +1,6 @@
 {
   "heading": "$ cat about.md",
+  "avatarUrl": "assets/img/profile.jpg",
   "bio": [
     "Full Stack Developer with around 5 years of experience in finance, insurance, and automotive domains, delivering cloud native microservices and responsive Angular front ends. Migrated legacy monoliths to containerized Node.js and Spring Boot services on Azure Kubernetes and GKE, reducing incident resolution time and boosting system reliability.",
     "Guided cross functional teams through CI/CD pipelines using GitHub Actions and Jenkins, accelerating release cadence while mentoring engineers."

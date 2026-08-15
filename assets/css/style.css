@@ -631,6 +631,20 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Same treatment as the company logo plates: monochrome to sit inside
+     the brutalist palette, full colour on hover. Drop the filter rules
+     below to show the photo in colour permanently. */
+  filter: grayscale(1) contrast(1.05);
+  transition: filter 0.4s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.about-avatar:hover .about-avatar-img {
+  filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-avatar-img { transition: none; }
+  .about-avatar-inner { animation: none; }
 }
 
 .about-available-badge {
